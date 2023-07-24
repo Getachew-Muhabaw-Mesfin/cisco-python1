@@ -1,0 +1,527 @@
+Well done! You've reached the end of Module 3 and completed a major milestone in your Python programming education. Here's a short summary of the topic areas you've covered in Module 3:
+
+Boolean values to compare different values and control the execution paths using the if and if-else instructions;
+the utilization of loops (while and for) and how to control their behavior using the break and continue instructions;
+the difference between logical and bitwise operations;
+the concept of lists and list processing, including the iteration provided by the for loop, and slicing;
+the idea of multi-dimensional arrays.
+You are now ready to take the module test, which will both help you gauge what you've learned so far.
+
+The following test is based on what you have just learned. There are twenty questions in total and you need to score at least 70% to pass.
+
+Good luck!
+
+
+Complete Question 1Question 1
+Multiple choice question
+An operator able to check whether two values are equal is coded as:
+
+
+!=
+
+==
+
+===
+
+=
+Remember that the == operator compares two arguments and checks if they are equal.
+
+Complete Question 2Question 2
+Multiple choice question
+The value eventually assigned to x is equal to:
+
+x = 1
+x = x == x
+ 
+
+
+1
+
+False
+
+0
+
+True
+The == operator is more prominent in the operator hierarchy than the = operator. Therefore, the operation on the right is evaluated before the one on the left.
+
+Complete Question 3Question 3
+Multiple choice question
+How many stars (*) will the following snippet send to the console?
+
+i = 0
+while i <= 3 :
+    i += 2
+    print("*")
+ 
+
+
+two
+
+three
+
+zero
+
+one
+Let’s analyze this example:
+
+the i variable is assigned the integer value of 0,
+the while loop compares if 0 <= 3, and since it is True, the loop is entered,
+the i variable is incremented by 2, and a first star is printed on the console,
+the while loop now compares if 2 <= 3, and since it is True, the loop is entered,
+the variable i is incremented by 2, and a second star is printed on the console,
+the while loop now compares if 4 <= 3, and since it is False, the loop is no longer executed.
+Complete Question 4Question 4
+Multiple choice question
+How many stars (*) will the following snippet send to the console?
+
+i = 0
+while i <= 5 :
+    i += 1
+    if i % 2 == 0:
+      break
+    print("*")
+ 
+
+
+two
+
+zero
+
+one
+
+three
+Let’s analyze this example:
+
+the i variable is assigned the integer value of 0,
+the while
+the i variable is incremented by 1, and its new value is 2,
+the operation 1 % 2 is evaluated and returns 1,
+the 1 is compared with 0, 1 == 0, and since it is False, the if conditional is not executed,
+A star is printed on the console,
+the while loop now compares if 2 <= 3, and since it is True, the loop is entered,
+the i variable is incremented by 1, and its new value is 2,
+the operation 2 % 2 is evaluated and returns 0,
+the 0 is compared with 0, 0 == 0, and since it is True, the if conditional is executed,
+the break statement is executed,
+the while loop is terminated.
+Complete Question 5Question 5
+Multiple choice question
+How many hashes (#) will the following snippet send to the console?
+
+for i in range(1):
+    print("#")
+else:
+    print("#")
+ 
+
+
+two
+
+zero
+
+three
+
+one
+Let’s analyze this example:
+
+the for loop begins using the variable i as counter, it begins in 0 and stops before 1, so a single iteration is performed,
+a first # is printed on the console,
+after exiting the loop, the else statement is executed,
+a second # is printed on the console.
+Complete Question 6Question 6
+Multiple choice question
+How many hashes (#) will the following snippet send to the console?
+
+var = 0
+while var < 6:
+    var += 1
+    if var % 2 == 0:
+        continue
+    print("#")
+ 
+
+
+zero
+
+three
+
+two
+
+one
+Let’s analyze this example:
+
+the var variable is assigned the integer value of 0,
+the while loop begins comparing 0 < 6, and since it is True, the loop is entered,
+the var variable is incremented by 1, and its new value is 1,
+the operation 1 % 2 returns 1, and 1==0 returns False,
+the if conditional is not executed,
+a first # is printed in the console,
+the while loop compares 1 < 6, and since it is True, the loop is entered,
+the var variable is incremented by 1, and its new value is 2,
+the operation 2 % 2 returns 0,, and 0==0 returns True,
+the if conditional is executed, and the continue statement jumps to the while statement,
+the while loop now compares 2 < 6, and since it is True, the loop is entered,
+the var variable is incremented by 1, and its new value is 3,
+the operation 3 % 2 returns 1, and 1==0 returns False,
+the if conditional is not executed,
+a second # is printed on the console,
+the while loop compares 3 < 6, and since it is True, the loop is entered,
+the var variable is incremented by 1, its new value is 4,
+the operation 4 % 2 returns 0, and 0==0 returns True,
+the if conditional is executed, and the continue statement jumps to the while statement,
+the while loop now compares 4 < 6, and since it is True, the loop is entered,
+the var variable is incremented by 1, and its new value is 5,
+the operation 5 % 2 returns 1, and 1==0 returns False,
+the if conditional is not executed,
+a third # is printed on the console,
+the while loop now compares 5 < 6, and since it is True, the loop is entered,
+the var variable is incremented by 1, and its new value is 6,
+the operation 6 % 2 returns 0, and 0==0 returns True,
+the if conditional is executed, and the continue statement jumps to the while statement,
+the while loop now compares 6 < 6, and since it is False, the loop is terminated.
+Complete Question 7Question 7
+Multiple choice question
+How many hashes (#) will the following snippet send to the console?
+
+var = 1
+while var < 10:
+    print("#")
+    var = var << 1
+ 
+
+
+two
+
+one
+
+eight
+
+four
+Let’s analyze this example:
+
+the var variable is assigned the integer value of 1,
+the while loop begins comparing 1 < 10, and since it is True, the loop is entered,
+a first # is printed on the console,
+the var variable is binary shifted 1 position to the left, and it is now 2,
+the while loop compares 2 < 10, and since it is True, the loop is entered,
+a second # is printed on the console,
+the var variable is binary shifted 1 position to the left, and it is now 4,
+the while loop compares 4 < 10, and since it is True, the loop is entered,
+a third # is printed on the console,
+the var variable is binary shifted 1 position to the left, and it is now 8,
+the while loop compares 8 < 10, and since it is True, the loop is terminated,
+a fourth # is printed on the console,
+the var variable is binary shifted 1 position to the left, and it is now 16,
+the while loop compares 16 < 10, and since it is False, the loop is terminated.
+Complete Question 8Question 8
+Multiple choice question
+What value will be assigned to the x variable?
+
+z = 10
+y = 0
+x = y < z and z > y or y > z and z < y
+ 
+
+
+True
+
+1
+
+0
+
+False
+Let’s analyze this example:
+
+the z variable is assigned the integer value of 10,
+the y variable is assigned the integer value of 0,
+the relational comparison y < z returns True,
+the relational comparison z > y returns True,
+the logical comparison True and True returns True,
+the relational comparison y > z returns False,
+the relational comparison z < y returns False,
+the logical comparison False and False returns False,
+finally, True or False returns True.
+Complete Question 9Question 9
+Multiple choice question
+What is the output of the following snippet?
+
+a = 1
+b = 0
+c = a & b
+d = a | b
+e = a ^ b
+ 
+print(c + d + e)
+ 
+
+
+3
+
+0
+
+1
+
+2
+Let’s analyze this example:
+
+the a variable is assigned the integer value of 1,
+the b variable is assigned the integer value of 0,
+the c variable is assigned the and bitwise result of a & b, which is 0,/li>
+the d variable is assigned the or bitwise result of a | b, which is 1,
+the e variable is assigned the xor bitwise result of a ^ b, which is 1,
+the sum of the c,d and e variables is printed on the console, which is 2.
+Complete Question 10Question 10
+Multiple choice question
+What is the output of the following snippet?
+
+my_list = [3, 1, -2]
+print(my_list[my_list[-1]])
+ 
+
+
+3
+
+-1
+
+-2
+
+1
+Let’s analyze this example:
+
+the list my_list is created with the integer elements 3, 1, -2,
+using a negative index (-1), the value of the last element in the list is obtained, which is -2,
+-2 is used to obtain the value of the second last element, which is 1,
+1 is printed on the console.
+Complete Question 11Question 11
+Multiple choice question
+What is the output of the following snippet?
+
+my_list = [1, 2, 3, 4]
+print(my_list[-3:-2])
+ 
+
+
+[2]
+
+[2, 3, 4]
+
+[2, 3]
+
+[]
+Let’s analyze this example:
+
+the list my_list is created with the integer elements 1, 2, 3, 4,
+using negative indices (-3:-2), the elements from the third-last position to before the second-last position are selected,
+the elements are printed on the console.
+Complete Question 12Question 12
+Multiple choice question
+The second assignment:
+
+vals = [0, 1, 2]
+vals[0], vals[2] = vals[2], vals[0]
+ 
+
+
+shortens the list
+
+reverses the list
+
+doesn't change the list
+
+extends the list
+Let’s analyze this example:
+
+the list vals is created with the integer elements 0,1,2,
+using positive indices, the value in position 0 is swapped with the element in position 2,
+the elements are now in this order: 2,1,0. Therefore, the list has been reversed.
+Complete Question 13Question 13
+Multiple choice question
+After execution of the following snippet, the sum of all vals elements will be equal to:
+
+vals = [0, 1, 2]
+vals.insert(0, 1)
+del vals[1]
+ 
+
+
+4
+
+5
+
+2
+
+3
+Let’s analyze this example:
+
+the list vals is created with the integer elements 0, 1, 2,
+using the insert method, an integer value of 1 is inserted in the first position of the list. The new list is 1,0,1,2,
+using the del function, the element in position 1 is deleted, and the list is now 1,1,2,
+the sum of the elements is 4.
+Complete Question 14Question 14
+Multiple choice question
+Take a look at the snippet, and choose the true statements:  (Select two answers)
+
+nums = [1, 2, 3]
+vals = nums
+del vals[1:2]
+ 
+
+
+nums and vals are of the same length
+
+nums and vals refer to the same list
+
+nums is longer than vals
+
+nums is replicated and assigned to vals
+Remember that:
+
+the assignment vals = nums does not create a new list, as vals is only another name for nums, and they both point to the same space in the memory,
+if you delete any elements in vals, they are also deleted in nums.
+Complete Question 15Question 15
+Multiple choice question
+Which of the following sentences are true?  (Select two answers)
+
+nums = [1, 2, 3]
+vals = nums[-1:-2]
+ 
+
+
+nums and vals are two different lists
+
+nums is longer than vals
+
+vals is longer than nums
+
+nums and vals are of the same length
+Remember that:
+
+when using indices, a new list is created with the elements specified within the brackets,
+the new list created only has one element: [3].
+Complete Question 16Question 16
+Multiple choice question
+What is the output of the following snippet?
+
+my_list_1 = [1, 2, 3]
+my_list_2 = []
+for v in my_list_1:
+    my_list_2.insert(0, v)
+print(my_list_2)
+ 
+
+
+[3, 2, 1]
+
+[3, 3, 3]
+
+[1, 1, 1]
+
+[1, 2, 3]
+Let's analyze this code:
+
+a list named my_list_1 is created with the elements 1,2,3,
+an empty list named my_list_2 is created,
+using a for loop, my_list_1 is iterated,
+every element in my_list_1 is inserted in my_list_2, always in the position 0,
+this is the list in each iteration:
+[1]
+[2,1]
+[3,2,1]
+finally, the list is printed on the console.
+Complete Question 17Question 17
+Multiple choice question
+What is the output of the following snippet?
+
+my_list = [1, 2, 3]
+for v in range(len(my_list)):
+    my_list.insert(1, my_list[v])
+print(my_list)
+ 
+
+
+[3, 2, 1, 1, 2, 3]
+
+[1, 2, 3, 1, 2, 3]
+
+[1, 2, 3, 3, 2, 1]
+
+[1, 1, 1, 1, 2, 3]
+Let's analyze this code:
+
+a list named my_list is created with the elements 1,2,3,
+using a for loop in the range from 0 to the length of my_list minus 1, that is 0,1,2, the following elements are inserted in the list:
+in iteration 1: the value of that returns my_list[0] is inserted in position 1. The list is now: [1,1,2,3]
+in iteration 2: the value of that returns my_list[1] is inserted in position 1. The list is now: [1,1,1,2,3]
+in iteration 3: the value of that returns my_list[2] is inserted in position 1. The list is now: [1,1,1,1,2,3]
+finally, the list is printed on the console.
+Complete Question 18Question 18
+Multiple choice question
+How many elements does the my_list list contain?
+
+my_list = [i for i in range(-1, 2)]
+ 
+
+
+four
+
+three
+
+two
+
+one
+A list named my_list is created with a range of elements from -1 to an element before 2, that is: -1,0,1. Three elements.
+
+Complete Question 19Question 19
+Multiple choice question
+What is the output of the following snippet?
+
+t = [[3-i for i in range (3)] for j in range (3)]
+s = 0
+for i in range(3):
+    s += t[i][i]
+print(s)
+ 
+
+
+7
+
+4
+
+6
+
+2
+Let's analyze this code:
+
+a list named t is created with the following characteristics:
+the first for loop iterates through 0,1,2, with these operations: 3-0, 3-1, 3-2. The results are added to the list: [3,2,1]
+the second for loop also iterates through 0,1,2, performing the previous operation three times,
+the resulting list is the following: [[3, 2, 1], [3, 2, 1], [3, 2, 1]]
+the variable s is assigned the integer value of 0,
+a third for loop iterates through 0,1,2,
+the elements in positions [0][0], [1][1], [2][2] are added,
+the result is 3+2+1 = 6,
+the s variable is printed on the console.
+Complete Question 20Question 20
+Multiple choice question
+What is the output of the following snippet?
+
+my_list = [[0, 1, 2, 3] for i in range(2)]
+print(my_list[2][0])
+ 
+
+
+1
+
+0
+
+2
+
+the snippet will cause a runtime error
+Let's analyze this code:
+
+a list named my_list is created with the element [0, 1, 2, 3] in the range of 0, 1 using a for loop. Therefore, the list created is as follows: [[0, 1, 2, 3], [0, 1, 2, 3]]
+an attempt is made to access the element in position [2][0]
+the index 2 is out of range, so the error message IndexError: list index out of range is generated.
+You've submitted your answers!
+Reset
+Review Assessment
